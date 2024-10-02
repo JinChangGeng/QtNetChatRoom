@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Reg</class>
+ <widget class="QWidget" name="Reg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1002</width>
+    <height>596</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>注册</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    border: none; /* 去掉边框 */
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, 
+                                stop: 0 #1A1A1A,  /* 深黑色 */
+                                stop: 1 #0D0D0D);  /* 更深的黑色 */
+}
+
+QLineEdit {
+    background-color: #333;  /* 输入框背景颜色（深灰色） */
+    border: 1px solid #666;  /* 输入框边框颜色（浅灰色） */
+    border-radius: 5px;  /* 圆角边框 */
+    padding: 5px;  /* 内边距 */
+    font-size: 14px;  /* 字体大小 */
+    color: #FFFFFF;  /* 字体颜色（白色） */
+}
+
+QPushButton {
+    background-color: #444;  /* 按钮背景颜色（稍浅的黑色） */
+    border: none;  /* 去掉边框 */
+    border-radius: 5px;  /* 圆角边框 */
+    color: #FFFFFF;  /* 字体颜色（白色） */
+    font-size: 14px;  /* 字体大小 */
+    padding: 10px;  /* 内边距 */
+}
+
+QPushButton:hover {
+    background-color: #555;  /* 悬停时的按钮背景颜色（灰色） */
+}
+
+QPushButton:pressed {
+    background-color: #333;  /* 按下时的按钮背景颜色（更深的灰色） */
+}
+
+QLabel {
+    color: #FFFFFF;  /* 标签字体颜色（白色） */
+    font-size: 14px;  /* 标签字体大小 */
+}
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_4">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font: 16pt &quot;宋体&quot;;</string>
+           </property>
+           <property name="text">
+            <string>账号:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEditId">
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>16</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 16pt &quot;宋体&quot;;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="styleSheet">
+            <string notr="true">font: 16pt &quot;宋体&quot;;</string>
+           </property>
+           <property name="text">
+            <string>密码:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEditPassword">
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>16</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 16pt &quot;宋体&quot;;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonReg">
+         <property name="styleSheet">
+          <string notr="true">font: 16pt &quot;宋体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>立即注册</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
